@@ -1,0 +1,207 @@
+/* Container that centers the login card */
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+  margin: 0;
+}
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.login-container input {
+  width: 100%;
+  padding: 20px;
+  margin: 14px 0;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+  transition: all 0.3s ease;
+  background-color: #fff;
+  color: #333;              
+}
+.login-container input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+  background-color: #fff;
+  color: #333;
+}
+
+/* Card container */
+.login-container {
+  text-align: center;
+  max-width: 480px;
+  width: 100%;
+  background-color: #ffffffee;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Heading */
+.login-container h1 {
+  font-size: 3em;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+/* Input fields */
+.login-container input {
+  width: 100%;
+  padding: 20px;
+  margin: 14px 0;
+  border: 1px solid #aaa;
+  border-radius: 30px;
+  box-sizing: border-box;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+/* Input focus styling */
+.login-container input:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+/* Optional gradient border flair */
+.login-container input:focus {
+  border: 2px solid transparent;
+  background-image: linear-gradient(#fff, #fff), linear-gradient(to right, #667eea, #764ba2);
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+
+/* Password wrapper */
+.input-wrapper {
+  position: relative;
+  margin-bottom: 14px;
+}
+
+/* Eye toggle */
+.toggle-eye {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 24px;
+  color: #666;
+  user-select: none;
+  line-height: 1;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Primary button */
+.btn-primary {
+  width: 100%;
+  padding: 16px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+/* Primary button hover */
+.btn-primary:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  box-shadow: 0 4px 12px rgba(118, 75, 162, 0.4);
+}
+
+/* Signup text */
+.signup-text {
+  margin-bottom: 18px;
+  font-size: 18px;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+.signup-text a {
+  color: #4c6ef5;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* Separator */
+.separator {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 30px 0;
+  font-size: 18px;
+}
+
+.separator span {
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+
+.separator span:nth-child(2) {
+  margin: 0 10px;
+  flex: none;
+}
+
+/* Google button */
+.btn-google {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  margin: 14px 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #310f0f;
+  transition: all 0.3s ease;
+}
+/* Responsive tweaks */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+  }
+
+  .login-container h1 {
+    font-size: 2.2em;
+  }
+
+  .btn-primary,
+  .btn-google {
+    font-size: 18px;
+    padding: 14px;
+  }
+
+  .login-container input {
+    font-size: 18px;
+    padding: 16px;
+  }
+}
