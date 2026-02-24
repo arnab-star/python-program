@@ -1,20 +1,14 @@
-import React from "react";
-// import SchoolPortal from "./school-portal";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import LoginPage from "./login";
+import Homepage from "./Pages/Homepage";
+import { Routes, Route } from "react-router-dom";
+// import LoginPage from "./login";
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    //     {/* <Route path="/" element={<SchoolPortal />} /> */}
-    //     <LoginPage />
-    //   </Routes>
-    // </Router>
-    <LoginPage />
-    
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      {/* <Route path="/login" element={<LoginPage />} /> */}
+    </Routes>
   );
 }
 
 export default App;
-    
